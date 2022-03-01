@@ -18,9 +18,9 @@ import connectDB from "./db/connect.js";
 app.use(express.json());
 
 
-app.get('/', (req, res)=>{
-    res.send('Welcome')
-})
+app.get("/", (req, res) => {
+  res.send("Welcome");
+});
 
 
 app.use('/api/v1/auth', authRouter);
